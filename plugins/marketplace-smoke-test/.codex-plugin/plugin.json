@@ -1,0 +1,25 @@
+{
+  "name": "marketplace-smoke-test",
+  "version": "0.1.0",
+  "description": "A sample plugin for testing marketplace discovery, skill loading, and a public MCP connection.",
+  "author": {
+    "name": "Dekreto"
+  },
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Marketplace Smoke Test",
+    "shortDescription": "Test a skill and public MCP connection",
+    "longDescription": "Run a simple greeting to verify skill loading, then search public OpenAI documentation to verify the bundled MCP connection.",
+    "developerName": "Dekreto",
+    "category": "Productivity",
+    "capabilities": [
+      "Verify sample skill loading",
+      "Search public OpenAI documentation"
+    ],
+    "defaultPrompt": [
+      "Use the marketplace-check skill to greet me.",
+      "Use the marketplace-check skill to check the MCP connection."
+    ]
+  }
+}
